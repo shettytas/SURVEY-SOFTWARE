@@ -1,4 +1,3 @@
-# SURVEY SOFTWARE
 # REPORT
 The data structures used here are Linked list and BST.
 
