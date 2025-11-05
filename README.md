@@ -3,7 +3,8 @@ The data structures used here are Linked list and BST.
 
 ## Linked List
 The Linked List is used to store *surveys* and their associated *questions*.
-Each survey node points to its questions, allowing easy sequential access.  
+Each survey node points to its questions, allowing easy sequential access.   
+
 Functions using Linked lists only are:
 - createSurveyNode() 
 - addQuestion()  
@@ -17,6 +18,7 @@ Functions using Linked lists only are:
 ## BST
 The BST stores the *responses* for each question. Each response option is a node in the tree, and the number of times each option is selected is stored in the node's count field.
 This structure allows efficient counting and updating of responses.  
+
 Functions using BST only are:
 - createBSTNode()  
 - insertBST()  
