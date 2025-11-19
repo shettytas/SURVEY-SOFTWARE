@@ -56,4 +56,8 @@ SurveyNode* selectAnySurvey(SurveyNode *head);
 // Utility
 void clearStdin();
 
+//delete functions
+void deleteQuestion(SurveyNode *head);
+void deleteSurvey(SurveyNode **head);
+
 #endif
