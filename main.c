@@ -17,14 +17,14 @@ int main() {
         printf("Enter choice: ");
 
         if (scanf("%d", &choice) != 1) {
-            printf("Invalid input. Enter number between 1–6.\n");
+            printf("Invalid input.Enter number between 1 to 6. \n");
             clearStdin();
             continue;
         }
 
         switch (choice) {
             case 1:
-                addQuestion(&surveyList);
+                addSurveyName(&surveyList);
                 break;
             case 2: {
                 SurveyNode *s = selectAnySurvey(surveyList);
@@ -44,7 +44,7 @@ int main() {
                 printf("Exiting...\n");
                 return 0;
             default:
-                printf("Invalid choice. \n");
+                printf("Invalid choice. Enter number between 1 to 6.\n");
         }
     }
 }

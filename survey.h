@@ -41,7 +41,7 @@ int totalResponsesBST(BSTNode *root);
 
 // Question and survey operations
 Question* newQuestion(char *text, int numOptions);
-void addQuestion(SurveyNode **head);           
+void addSurveyName(SurveyNode **head);           
 void addQuestionToSurvey(SurveyNode *s); 
 void viewSurveyDetails(SurveyNode *head);      
 void conductSurvey(SurveyNode *head);          
