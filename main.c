@@ -22,10 +22,13 @@ int main()
 
         if (scanf("%d", &choice) != 1)
         {
-            printf("Invalid input.Enter number between 1 to 6. \n");
-            clearStdin();
+            printf("Invalid input. Enter a number.\n");
+            scanf("%*[^\n]");
+            scanf("%*c");
             continue;
         }
+
+        scanf("%*c"); // consume newline
 
         switch (choice)
         {
@@ -55,10 +58,11 @@ int main()
             publishResults(surveyList);
             break;
         case 8:
-            printf("Exiting...\n");
+            printf("Exiting...");
             return 0;
+
         default:
-            printf("Invalid choice. Enter number between 1 to 6.\n");
+            printf("Invalid choice.\n");
         }
     }
 }
